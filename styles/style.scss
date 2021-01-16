@@ -1,0 +1,99 @@
+
+@import "./variables";
+
+
+body {
+  font-size: $fs-body;
+  font-family: 'Karla', sans-serif;
+  font-weight: $fw-rgl;
+  background-color: $clr-bcg;
+}
+
+.container {
+  padding: 2em;
+  min-width: 375px;
+}
+
+.intro {
+  background-color: #fff ;
+  border-radius: .3em .3em 0 0 ;
+}
+
+.suscription {
+  border-bottom: #1ba5a2bb 3px solid ;
+  
+  .suscription__price span{
+    opacity: .7;
+  }
+}
+
+.suscription__condition {
+  margin-top: -1em ;
+}
+
+.about-us__body {
+  width: 78%;
+  opacity: .7;
+}
+
+.suscription,
+.about-us {
+  background-color: $clr-cyan;
+  p {
+    color: #fff;
+
+  }
+}
+
+.about-us {
+  border-radius: 0 0 .3em .3em;
+}
+
+.dim {
+  padding: .5em 1.4em;
+  margin: 0;
+
+  text-align: left;
+}
+
+// typographic
+
+h2 {
+  font-size: $fs-title;
+  font-weight: $fw-bld;
+  color: #fff;
+}
+
+p {
+  color: $clr-gray;
+  line-height: 1.5 ;
+}
+
+strong {
+  font-size: 1.7rem;
+  opacity: 1;
+}
+
+.intro-title{
+  color: $clr-cyan;
+  font-weight: $fw-bld;
+}
+
+.intro__subtitle {
+  color: $clr-yellow;
+  font-weight: $fw-bld
+}
+
+.call-action {
+  background-color: $clr-yellow;
+  border: unset;
+  border-radius: .3em;
+  box-shadow: white;
+  padding: 1em 7.5em;
+  margin: 1em auto;
+
+  font-size: 0.9375em;
+  font-weight: $fw-bld;
+  color: #fff;
+}
+@import './desktop-design';

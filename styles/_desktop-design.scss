@@ -1,0 +1,75 @@
+@media (min-width: 500px ) {
+  .container {
+    // min-width: 500px;
+    max-height: 600px ;
+    max-width: 700px;
+
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 300px;
+    margin: 0 auto;
+
+    border-radius: .5em;
+
+    .intro,
+    .suscription,
+    .about-us{
+      padding: 1.5em 3em;
+    }
+
+    .suscription,
+    .about-us{
+      margin-bottom: 2em;
+    }
+  }
+
+  .intro {
+    grid-column: 1 / -1;
+    .intro__body {
+      width: 90%;
+      margin-top: -0.7em;
+
+    }
+  } 
+  
+  .suscription {
+    grid-column: 1 / 2 ;
+
+    border-radius: 0  0 0 .5em;
+
+    .suscription__condition {
+      margin: -0.7em 0 .8em 0;
+      opacity: 1;
+    }
+  .suscription__price { 
+    strong {
+      font-size: 2.1rem;
+    }
+    span {
+      position: relative;
+      left: .5em;
+      bottom: .3em;
+      opacity: 0.6;
+    }
+
+}
+  }
+
+  .about-us {
+    grid-column: 2 / 3 ;
+    border-radius: 0  0 .5em 0;
+    opacity: .7;
+
+    .about-us__body {
+      width: 85%;
+      color: #ffffff;
+    }
+  }
+
+  .call-action {
+    padding: 1em 6.5em;
+  }
+
+  
+}

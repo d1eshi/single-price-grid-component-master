@@ -1,0 +1,157 @@
+body {
+  font-size: 1rem;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  background-color: #e5eff5;
+}
+
+.container {
+  padding: 2em;
+  min-width: 375px;
+}
+
+.intro {
+  background-color: #fff;
+  border-radius: .3em .3em 0 0;
+}
+
+.suscription {
+  border-bottom: #1ba5a2bb 3px solid;
+}
+
+.suscription .suscription__price span {
+  opacity: .7;
+}
+
+.suscription__condition {
+  margin-top: -1em;
+}
+
+.about-us__body {
+  width: 78%;
+  opacity: .7;
+}
+
+.suscription,
+.about-us {
+  background-color: #2ab2af;
+}
+
+.suscription p,
+.about-us p {
+  color: #fff;
+}
+
+.about-us {
+  border-radius: 0 0 .3em .3em;
+}
+
+.dim {
+  padding: .5em 1.4em;
+  margin: 0;
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+p {
+  color: #98a6bd;
+  line-height: 1.5;
+}
+
+strong {
+  font-size: 1.7rem;
+  opacity: 1;
+}
+
+.intro-title {
+  color: #2ab2af;
+  font-weight: 700;
+}
+
+.intro__subtitle {
+  color: #c0df34;
+  font-weight: 700;
+}
+
+.call-action {
+  background-color: #c0df34;
+  border: unset;
+  border-radius: .3em;
+  -webkit-box-shadow: white;
+          box-shadow: white;
+  padding: 1em 7.5em;
+  margin: 1em auto;
+  font-size: 0.9375em;
+  font-weight: 700;
+  color: #fff;
+}
+
+@media (min-width: 500px) {
+  .container {
+    max-height: 600px;
+    max-width: 700px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 200px 300px;
+        grid-template-rows: 200px 300px;
+    margin: 0 auto;
+    border-radius: .5em;
+  }
+  .container .intro,
+  .container .suscription,
+  .container .about-us {
+    padding: 1.5em 3em;
+  }
+  .container .suscription,
+  .container .about-us {
+    margin-bottom: 2em;
+  }
+  .intro {
+    grid-column: 1 / -1;
+  }
+  .intro .intro__body {
+    width: 90%;
+    margin-top: -0.7em;
+  }
+  .suscription {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    border-radius: 0  0 0 .5em;
+  }
+  .suscription .suscription__condition {
+    margin: -0.7em 0 .8em 0;
+    opacity: 1;
+  }
+  .suscription .suscription__price strong {
+    font-size: 2.1rem;
+  }
+  .suscription .suscription__price span {
+    position: relative;
+    left: .5em;
+    bottom: .3em;
+    opacity: 0.6;
+  }
+  .about-us {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    border-radius: 0  0 .5em 0;
+    opacity: .7;
+  }
+  .about-us .about-us__body {
+    width: 85%;
+    color: #ffffff;
+  }
+  .call-action {
+    padding: 1em 6.5em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
